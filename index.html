@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Jeya Kumar | Java Backend Developer</title>
+    <meta name="description"
+        content="Portfolio of Ganesh Jeya Kumar, Java Backend Developer and AI Enthusiast. Building scalable backend systems and intelligent solutions.">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Particles Background Canvas -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Ganesh Jeya Kumar<span class="logo-accent">/&gt;</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <p class="greeting">Hi there, I'm</p>
+                <h1 class="name">Ganesh Jeya Kumar</h1>
+                <h2 class="role">
+                    <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="tagline">
+                    Building scalable backend systems and integrating intelligent AI solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons mt-4">
+                    <a href="https://linkedin.com/in/ganeshjeyakumar" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ganeshjeyakumark@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Ganeshjeyakumark" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="blob-wrapper">
+                    <div class="blob"></div>
+                    <div class="coding-illustration">
+                        <i class="fa-brands fa-java fa-5x float-icon icon-1"></i>
+                        <i class="fa-solid fa-database fa-4x float-icon icon-2"></i>
+                        <i class="fa-solid fa-brain fa-4x float-icon icon-3"></i>
+                        <i class="fa-brands fa-envira fa-3x float-icon icon-4"></i> <!-- Spring leaf simulation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About <span class="text-accent">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text-card">
+                    <div class="about-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>
+                        Information Technology student passionate about backend development using <strong>Java, Spring
+                            Boot, and REST APIs</strong>.
+                        Interested in building scalable backend systems and integrating AI-powered features.
+                    </p>
+                    <p>
+                        Strong foundation in data structures, databases, and machine learning concepts.
+                        Always eager to learn new technologies and bridge the gap between traditional backend
+                        architectures and modern artificial intelligence solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technical <span class="text-accent">Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-code text-accent"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-java text-accent"></i> Java</div>
+                        <div class="skill-pill"><i class="fa-solid fa-c text-accent"></i> C</div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-server text-accent"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-leaf text-accent"></i> Spring Boot</div>
+                        <div class="skill-pill"><i class="fa-solid fa-network-wired text-accent"></i> REST APIs</div>
+                        <div class="skill-pill"><i class="fa-solid fa-layer-group text-accent"></i> MVC</div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-database text-accent"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-table text-accent"></i> MySQL</div>
+                        <div class="skill-pill"><i class="fa-solid fa-leaf text-accent"></i> MongoDB</div>
+                    </div>
+                </div>
+
+                <!-- Web -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-globe text-accent"></i>
+                        <h3>Web</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-html5 text-accent"></i> HTML</div>
+                        <div class="skill-pill"><i class="fa-brands fa-css3-alt text-accent"></i> CSS</div>
+                        <div class="skill-pill"><i class="fa-brands fa-js text-accent"></i> JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-brain text-accent"></i>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-network-wired text-accent"></i> Deep Learning
+                            (CNN)</div>
+                        <div class="skill-pill"><i class="fa-solid fa-cube text-accent"></i> TensorFlow</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-toolbox text-accent"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-git-alt text-accent"></i> Git</div>
+                        <div class="skill-pill"><i class="fa-solid fa-code text-accent"></i> VS Code</div>
+                        <div class="skill-pill"><i class="fa-solid fa-space-shuttle text-accent"></i> Postman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured <span class="text-accent">Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Powered Pneumonia Detection</h3>
+                        <p class="project-desc">
+                            Deep learning model built with TensorFlow using CNN to detect pneumonia from chest X-ray
+                            images. Includes dataset preprocessing and optimized model training for high accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Skill Swap Platform</h3>
+                        <p class="project-desc">
+                            Web platform where users can exchange and learn skills. Includes features such as dynamic
+                            user profiles, comprehensive skill listings, and a smart matching functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Integrated Backend Service</h3>
+                        <p class="project-desc">
+                            Robust backend service developed using Java Spring Boot with REST APIs and MySQL database.
+                            Focuses on integrating external AI prediction services seamlessly.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>REST API</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Journey & <span class="text-accent">Milestones</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Education -->
+                <div class="timeline-column" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>B.Tech Information Technology</h4>
+                            <h5>Francis Xavier Engineering College</h5>
+                            <span class="timeline-date">2023 &mdash; 2027</span>
+                            <p><strong>CGPA:</strong> 8.40</p>
+                            <p>Focusing on software engineering, back-end development, and AI methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internships -->
+                <div class="timeline-column" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="timeline-title"><i class="fas fa-briefcase"></i> Internships</h3>
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Data Science Intern</h4>
+                            <h5>E-Dot Technologies</h5>
+                            <span class="timeline-date">2025</span>
+                            <p>Worked on machine learning models, CNN algorithms, and complex dataset preprocessing.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Web Development Intern</h4>
+                            <h5>E-Dot Technologies</h5>
+                            <span class="timeline-date">2024</span>
+                            <p>Worked on internal dashboards and built responsive UI layouts to enhance user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-section mt-5" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="timeline-title text-center mb-4"><i class="fas fa-trophy"></i> Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-file-alt text-accent fa-2x mb-3"></i>
+                        <h4>Paper Presentation</h4>
+                        <p>Ramakrishna Engineering College</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-project-diagram text-accent fa-2x mb-3"></i>
+                        <h4>Project Presentation</h4>
+                        <p>VV College of Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In <span class="text-accent">Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently looking for new opportunities, and my inbox is always open. Whether you have a
+                        question or just want to say hi, I'll try my best to get back to you!</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:ganeshjeyakumark@gmail.com">ganeshjeyakumark@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+917010085235">+91 7010085235</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/ganeshjeyakumar"
+                                    target="_blank">linkedin.com/in/ganeshjeyakumar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <form id="contact-form" class="contact-form"
+                        onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">&lt;</span>Ganesh<span class="logo-accent">/&gt;</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ganeshjeyakumar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ganeshjeyakumark@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Ganesh Jeya Kumar. All rights reserved.</p>
+            <p class="footer-tagline">Designed & Built with <i class="fas fa-heart text-accent"></i> & <i
+                    class="fas fa-coffee text-accent"></i></p>
+        </div>
+        <div class="scroll-top">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- AOS Animaion JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
