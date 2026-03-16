@@ -176,3 +176,110 @@ document.addEventListener('DOMContentLoaded', () => {
     initParticles();
     animateParticles();
 });
+
+/* ==== 6. Certifications Modal ==== */
+window.openModal = function(imgSrc, captionText) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const caption = document.getElementById("modalCaption");
+    
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+    caption.innerHTML = captionText;
+    
+    // Disable body scrolling
+    document.body.style.overflow = "hidden";
+};
+
+window.closeModal = function() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+    
+    // Enable body scrolling
+    document.body.style.overflow = "auto";
+};
+
+// Close modal when clicking outside the image
+window.onclick = function(event) {
+    const imgModal = document.getElementById("imageModal");
+    const projModal = document.getElementById("projectModal");
+    if (event.target == imgModal) {
+        window.closeModal();
+    }
+    if (event.target == projModal) {
+        window.closeProjectModal();
+    }
+};
+
+// Close on escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        const imgModal = document.getElementById("imageModal");
+        if (imgModal && imgModal.style.display === "block") {
+            window.closeModal();
+        }
+        const projModal = document.getElementById("projectModal");
+        if (projModal && projModal.style.display === "block") {
+            window.closeProjectModal();
+        }
+    }
+});
+
+/* ==== 7. Project Details Modal ==== */
+const projectDetails = {
+    'pneumonia': {
+        title: 'AI Powered Pneumonia Detection',
+        desc: 'Deep learning CNN model built using TensorFlow that analyzes chest X-ray images and predicts pneumonia. The system includes image preprocessing, model training, and AI-based prediction output. <br><br>Features:<br>- High accuracy CNN model<br>- Chest X-Ray pre-processing pipeline<br>- Real-time prediction interface',
+        images: ['image.png', 'https://via.placeholder.com/800x450/111827/6366f1?text=Pneumonia+Detection+Architecture', 'https://via.placeholder.com/800x450/111827/6366f1?text=Chest+X-Ray+Sample'],
+        github: '#',
+        demo: '#'
+    },
+    'skillswap': {
+        title: 'Skill Swap Platform',
+        desc: 'A web platform where users can list their skills and learn new skills from others. Includes profile creation, skill listings, and matching functionality. <br><br>Features:<br>- User authentication and profiles<br>- Smart skill matching algorithm<br>- Real-time chat system',
+        images: ['assets/skillswap.jpg', 'https://via.placeholder.com/800x450/111827/8b5cf6?text=Skill+Listings', 'https://via.placeholder.com/800x450/111827/8b5cf6?text=User+Profile'],
+        github: '#',
+        demo: '#'
+    },
+    'aibackend': {
+        title: 'AI Integrated Backend Service',
+        desc: 'Backend service developed using Java Spring Boot with REST APIs and MySQL database. Integrates AI prediction services with backend applications. <br><br>Features:<br>- Scalable REST API architecture<br>- JWT-based security<br>- Seamless AI model integration via Python Microservices',
+        images: ['assets/ai_backend.png', 'https://via.placeholder.com/800x450/111827/3b82f6?text=API+Documentation', 'https://via.placeholder.com/800x450/111827/3b82f6?text=Database+Schema'],
+        github: '#',
+        demo: '#'
+    }
+};
+
+window.openProjectModal = function(projectId) {
+    const data = projectDetails[projectId];
+    if(!data) return;
+
+    document.getElementById('projectModalTitle').innerText = data.title;
+    document.getElementById('projectModalDesc').innerHTML = data.desc;
+    document.getElementById('projectModalGithub').href = data.github;
+    document.getElementById('projectModalDemo').href = data.demo;
+    
+    const sliderContainer = document.getElementById('projectModalImages');
+    sliderContainer.innerHTML = ''; // Reset
+    
+    // Add images
+    data.images.forEach(imgSrc => {
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.className = 'project-slider-img';
+        img.alt = 'Project Image';
+        sliderContainer.appendChild(img);
+    });
+
+    document.getElementById('projectModal').style.display = 'flex';
+    
+    // Disable body scrolling
+    document.body.style.overflow = "hidden";
+};
+
+window.closeProjectModal = function() {
+    document.getElementById('projectModal').style.display = 'none';
+    
+    // Enable body scrolling
+    document.body.style.overflow = "auto";
+};

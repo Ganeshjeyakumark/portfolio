@@ -42,6 +42,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -196,6 +197,34 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Coding Profiles -->
+            <div class="coding-profiles-section" data-aos="fade-up" data-aos-delay="200" style="margin-top: 80px;">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <h2>Coding <span class="text-accent">Profiles</span></h2>
+                    <div class="underline" style="width: 60px;"></div>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card profile-card" onclick="openModal('assets/leetcode.png', 'LeetCode Profile')" style="cursor: pointer;" title="View LeetCode Profile Image">
+                        <div class="profile-brand mb-3">
+                            <i class="fas fa-code fa-2x text-accent"></i>
+                        </div>
+                        <h4>LeetCode</h4>
+                        <p>Problem Solving & DSA</p>
+                        <span class="profile-link mt-3">View Profile Picture <i class="fas fa-image"></i></span>
+                    </div>
+                    
+                    <div class="achievement-card profile-card" onclick="openModal('assets/skillrack.png', 'SkillRack Profile')" style="cursor: pointer;" title="View SkillRack Profile Image">
+                        <div class="profile-brand mb-3">
+                            <i class="fas fa-laptop-code fa-2x text-accent"></i>
+                        </div>
+                        <h4>SkillRack</h4>
+                        <p>Competitive Programming</p>
+                        <span class="profile-link mt-3">View Profile Picture <i class="fas fa-image"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -210,18 +239,13 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-container">
+                        <img src="image.png" alt="AI Powered Pneumonia Detection" class="project-img">
+                    </div>
                     <div class="project-content">
-                        <div class="project-header">
-                            <i class="fa-regular fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
                         <h3 class="project-title">AI Powered Pneumonia Detection</h3>
                         <p class="project-desc">
-                            Deep learning model built with TensorFlow using CNN to detect pneumonia from chest X-ray
-                            images. Includes dataset preprocessing and optimized model training for high accuracy.
+                            Deep learning CNN model built using TensorFlow that analyzes chest X-ray images and predicts pneumonia. The system includes image preprocessing, model training, and AI-based prediction output.
                         </p>
                         <div class="project-tech">
                             <span>TensorFlow</span>
@@ -229,46 +253,44 @@
                             <span>Python</span>
                             <span>Deep Learning</span>
                         </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button onclick="openProjectModal('pneumonia')" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-container">
+                        <img src="assets/skillswap.jpg" alt="Skill Swap Platform" class="project-img">
+                    </div>
                     <div class="project-content">
-                        <div class="project-header">
-                            <i class="fa-regular fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
                         <h3 class="project-title">Skill Swap Platform</h3>
                         <p class="project-desc">
-                            Web platform where users can exchange and learn skills. Includes features such as dynamic
-                            user profiles, comprehensive skill listings, and a smart matching functionality.
+                            A web platform where users can list their skills and learn new skills from others. Includes profile creation, skill listings, and matching functionality.
                         </p>
                         <div class="project-tech">
-                            <span>HTML5/CSS3</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
                             <span>JavaScript</span>
-                            <span>Web Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button onclick="openProjectModal('skillswap')" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img-container">
+                        <img src="assets/ai_backend.png" alt="AI Integrated Backend Service" class="project-img">
+                    </div>
                     <div class="project-content">
-                        <div class="project-header">
-                            <i class="fa-regular fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
                         <h3 class="project-title">AI Integrated Backend Service</h3>
                         <p class="project-desc">
-                            Robust backend service developed using Java Spring Boot with REST APIs and MySQL database.
-                            Focuses on integrating external AI prediction services seamlessly.
+                            Backend service developed using Java Spring Boot with REST APIs and MySQL database. Integrates AI prediction services with backend applications.
                         </p>
                         <div class="project-tech">
                             <span>Java</span>
@@ -276,6 +298,73 @@
                             <span>REST API</span>
                             <span>MySQL</span>
                         </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                            <button onclick="openProjectModal('aibackend')" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My <span class="text-accent">Certifications</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-img-container" onclick="openModal('assets/java.jpg', 'Infosys Springboard – Java Programming')">
+                        <img src="assets/java.jpg" alt="Java Programming Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Java Programming</h3>
+                        <h4 class="cert-issuer">Infosys Springboard</h4>
+                        <p class="cert-desc">
+                            Completed Java programming fundamentals including OOP concepts and problem solving.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-img-container" onclick="openModal('assets/python.jpg', 'Cognitive.ai – Python Programming')">
+                        <img src="assets/python.jpg" alt="Python Programming Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Programming</h3>
+                        <h4 class="cert-issuer">Cognitive.ai</h4>
+                        <p class="cert-desc">
+                            Learned Python basics and applied them in data processing and simple machine learning tasks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-img-container" onclick="openModal('assets/mongo db.jpeg', 'MongoDB CRUD Operations Certification')">
+                        <img src="assets/mongo db.jpeg" alt="MongoDB CRUD Operations Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">MongoDB CRUD Operations</h3>
+                        <h4 class="cert-issuer">MongoDB</h4>
+                        <p class="cert-desc">
+                            Practical experience performing database CRUD operations using MongoDB.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -430,6 +519,33 @@
             <a href="#home"><i class="fas fa-chevron-up"></i></a>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal project-modal-wrapper">
+        <div class="project-modal-content">
+            <span class="close-modal close-project-modal" onclick="closeProjectModal()">&times;</span>
+            <h2 id="projectModalTitle" class="project-modal-title">Project Title</h2>
+            <div class="project-modal-layout">
+                <div class="project-modal-images-container" id="projectModalImages">
+                    <!-- Images will be injected here -->
+                </div>
+                <div class="project-modal-info">
+                    <p id="projectModalDesc" class="project-modal-desc"></p>
+                    <div class="project-modal-actions mt-4">
+                        <a href="#" id="projectModalGithub" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub Repo</a>
+                        <a href="#" id="projectModalDemo" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <!-- AOS Animaion JS -->
