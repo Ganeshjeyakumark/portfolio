@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ==== 4. Typing Effect ==== */
     const typingText = document.querySelector('.typing-text');
-    const words = ["Java Backend Developer", "AI Enthusiast", "Tech Innovator", "Problem Solver"];
+    const words = ["Software Engineer", "Java Backend Developer", "Spring Boot Developer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -229,23 +229,23 @@ document.addEventListener('keydown', function(event) {
 const projectDetails = {
     'pneumonia': {
         title: 'AI Powered Pneumonia Detection',
-        desc: 'Deep learning CNN model built using TensorFlow that analyzes chest X-ray images and predicts pneumonia. The system includes image preprocessing, model training, and AI-based prediction output. <br><br>Features:<br>- High accuracy CNN model<br>- Chest X-Ray pre-processing pipeline<br>- Real-time prediction interface',
-        images: ['image.png', 'https://via.placeholder.com/800x450/111827/6366f1?text=Pneumonia+Detection+Architecture', 'https://via.placeholder.com/800x450/111827/6366f1?text=Chest+X-Ray+Sample'],
-        github: '#',
+        desc: 'Developed a CNN-based Deep Learning model using TensorFlow and Python for automated pneumonia detection on 5000+ chest X-ray images. Applied image preprocessing and data augmentation techniques. Achieved 95% validation accuracy.<br><br>Features:<br>- High accuracy CNN model using TensorFlow<br>- Applied advanced image preprocessing and data augmentation techniques<br>- Achieved 95% validation accuracy',
+        images: ['image.png'],
+        github: 'https://github.com/Ganeshjeyakumark',
+        demo: '#'
+    },
+    'threehearts': {
+        title: 'Three Hearts Handmades',
+        desc: 'Developed a responsive business website showcasing 20+ handmade products. Designed modern product catalog pages with responsive layouts. Improved brand visibility through digital product presentation.<br><br>Features:<br>- Designed modern product catalog pages with responsive layouts<br>- Improved brand visibility through digital product presentation<br>- Clean, semantic HTML and CSS styling',
+        images: ['assets/three_hearts.png'],
+        github: 'https://github.com/Ganeshjeyakumark',
         demo: '#'
     },
     'skillswap': {
         title: 'Skill Swap Platform',
-        desc: 'A web platform where users can list their skills and learn new skills from others. Includes profile creation, skill listings, and matching functionality. <br><br>Features:<br>- User authentication and profiles<br>- Smart skill matching algorithm<br>- Real-time chat system',
-        images: ['assets/skillswap.jpg', 'https://via.placeholder.com/800x450/111827/8b5cf6?text=Skill+Listings', 'https://via.placeholder.com/800x450/111827/8b5cf6?text=User+Profile'],
-        github: '#',
-        demo: '#'
-    },
-    'aibackend': {
-        title: 'AI Integrated Backend Service',
-        desc: 'Backend service developed using Java Spring Boot with REST APIs and MySQL database. Integrates AI prediction services with backend applications. <br><br>Features:<br>- Scalable REST API architecture<br>- JWT-based security<br>- Seamless AI model integration via Python Microservices',
-        images: ['assets/ai_backend.png', 'https://via.placeholder.com/800x450/111827/3b82f6?text=API+Documentation', 'https://via.placeholder.com/800x450/111827/3b82f6?text=Database+Schema'],
-        github: '#',
+        desc: 'Built a responsive skill-sharing platform. Implemented interactive profile management modules. Designed scalable architecture for future backend integration.<br><br>Features:<br>- Implemented interactive profile management modules<br>- Designed scalable architecture for future backend integration<br>- Built with responsive modern CSS framework principles',
+        images: ['assets/skillswap.jpg'],
+        github: 'https://github.com/Ganeshjeyakumark',
         demo: '#'
     }
 };
@@ -283,3 +283,150 @@ window.closeProjectModal = function() {
     // Enable body scrolling
     document.body.style.overflow = "auto";
 };
+
+/* ==== 8. Achievements Count-Up Animation ==== */
+document.addEventListener('DOMContentLoaded', () => {
+    const achievementsSection = document.getElementById('achievements');
+    const counters = document.querySelectorAll('.counter-val');
+
+    const startCountUp = () => {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const duration = 2000; // 2 seconds animation
+            const startTime = performance.now();
+
+            const updateCount = (currentTime) => {
+                const elapsedTime = currentTime - startTime;
+                if (elapsedTime < duration) {
+                    count = Math.ceil((elapsedTime / duration) * target);
+                    counter.innerText = count.toLocaleString();
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+            requestAnimationFrame(updateCount);
+        });
+    };
+
+    if (achievementsSection && counters.length > 0) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCountUp();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        observer.observe(achievementsSection);
+    }
+});
+
+/* ==== 9. Contact Form Validation & WhatsApp Redirect ==== */
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
+    if (!contactForm) return;
+
+    // Toast Notification helper
+    function showToast(message, type = 'error') {
+        let toastContainer = document.querySelector('.toast-container');
+        if (!toastContainer) {
+            toastContainer = document.createElement('div');
+            toastContainer.className = 'toast-container';
+            document.body.appendChild(toastContainer);
+        }
+
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        
+        let icon = '<i class="fas fa-exclamation-circle"></i>';
+        if (type === 'success') icon = '<i class="fas fa-check-circle"></i>';
+        if (type === 'info') icon = '<i class="fas fa-info-circle"></i>';
+
+        toast.innerHTML = `${icon}<span>${message}</span>`;
+        toastContainer.appendChild(toast);
+
+        // Show toast
+        setTimeout(() => {
+            toast.classList.add('show');
+        }, 10);
+
+        // Remove toast after 4 seconds
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => {
+                toast.remove();
+            }, 400);
+        }, 4000);
+    }
+
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const subjectInput = document.getElementById('subject');
+        const messageInput = document.getElementById('message');
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const subject = subjectInput.value.trim();
+        const message = messageInput.value.trim();
+
+        // Validation
+        if (!name) {
+            showToast('Name is required!', 'error');
+            return;
+        }
+
+        if (!email) {
+            showToast('Email is required!', 'error');
+            return;
+        }
+
+        // Email regex validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            showToast('Please enter a valid email address!', 'error');
+            return;
+        }
+
+        if (!subject) {
+            showToast('Subject is required!', 'error');
+            return;
+        }
+
+        if (!message) {
+            showToast('Message is required!', 'error');
+            return;
+        }
+
+        // Show loading state on button
+        const originalBtnContent = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing message...';
+
+        // Format WhatsApp message
+        const waMessage = `👋 New Portfolio Enquiry\n\n👤 Name:\n${name}\n\n📧 Email:\n${email}\n\n📌 Subject:\n${subject}\n\n📝 Message:\n${message}`;
+        const encodedMessage = encodeURIComponent(waMessage);
+        const waUrl = `https://wa.me/917010085235?text=${encodedMessage}`;
+
+        // Wait 1 second (loading animation) before redirecting
+        setTimeout(() => {
+            // Open in new tab
+            window.open(waUrl, '_blank');
+            
+            // Restore button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnContent;
+            
+            // Clear form
+            contactForm.reset();
+
+            showToast('Redirecting to WhatsApp...', 'success');
+        }, 1000);
+    });
+});
+
