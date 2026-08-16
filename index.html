@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Jeya Kumar | Java Backend Developer</title>
+    <meta name="description"
+        content="Portfolio of Ganesh Jeya Kumar, Java Backend Developer and AI Enthusiast. Building scalable backend systems and intelligent solutions.">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Particles Background Canvas -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Ganesh Jeya Kumar K<span class="logo-accent">/&gt;</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <p class="greeting">Hi there, I'm</p>
+                <h1 class="name">Ganesh Jeya Kumar K</h1>
+                <h2 class="role">
+                    <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="tagline">
+                    Aspiring Software Engineer passionate about building scalable backend applications using Java, Spring Boot, REST APIs and MySQL. I enjoy solving real-world problems through clean code and user-centric software.
+                </p>
+                <div class="hero-buttons">
+                    <a href="assets/Resume.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons mt-4">
+                    <a href="https://github.com/Ganeshjeyakumark" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ganeshjeyakumar" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ganeshjeyakumark@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="blob-wrapper">
+                    <div class="blob"></div>
+                    <div class="avatar-container">
+                        <img src="assets/profile.png" alt="Ganesh Jeya Kumar K" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About <span class="text-accent">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text-card">
+                    <div class="about-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>
+                        I'm an aspiring Software Engineer with a strong foundation in Java, Spring Boot, REST APIs, MySQL, HTML, CSS and JavaScript. Through internships and academic projects, I have built backend applications, AI solutions and responsive web applications. I enjoy learning new technologies and creating software that solves real-world problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technical <span class="text-accent">Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-code text-accent"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-java text-accent"></i> Java</div>
+                        <div class="skill-pill"><i class="fa-brands fa-python text-accent"></i> Python</div>
+                        <div class="skill-pill"><i class="fa-solid fa-c text-accent"></i> C</div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-desktop text-accent"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-html5 text-accent"></i> HTML</div>
+                        <div class="skill-pill"><i class="fa-brands fa-css3-alt text-accent"></i> CSS</div>
+                        <div class="skill-pill"><i class="fa-brands fa-js text-accent"></i> JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-server text-accent"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-leaf text-accent"></i> Spring Boot</div>
+                        <div class="skill-pill"><i class="fa-solid fa-network-wired text-accent"></i> REST APIs</div>
+                        <div class="skill-pill"><i class="fa-solid fa-database text-accent"></i> CRUD Operations</div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-database text-accent"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-table text-accent"></i> MySQL</div>
+                        <div class="skill-pill"><i class="fa-solid fa-leaf text-accent"></i> MongoDB</div>
+                        <div class="skill-pill"><i class="fa-solid fa-database text-accent"></i> SQL</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-toolbox text-accent"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-brands fa-git-alt text-accent"></i> Git</div>
+                        <div class="skill-pill"><i class="fa-brands fa-github text-accent"></i> GitHub</div>
+                        <div class="skill-pill"><i class="fa-solid fa-code text-accent"></i> VS Code</div>
+                        <div class="skill-pill"><i class="fa-solid fa-rocket text-accent"></i> Postman</div>
+                    </div>
+                </div>
+
+                <!-- Core Skills -->
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-brain text-accent"></i>
+                        <h3>Core Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Backend Development</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Java Programming</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> REST API Development</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Database Management</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Problem Solving</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Object Oriented Programming</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> API Integration</div>
+                        <div class="skill-pill"><i class="fa-solid fa-circle-check text-accent"></i> Debugging</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coding Profiles -->
+            <div class="coding-profiles-section" data-aos="fade-up" data-aos-delay="200" style="margin-top: 80px;">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <h2>Coding <span class="text-accent">Profiles</span></h2>
+                    <div class="underline" style="width: 60px;"></div>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card profile-card" onclick="openModal('assets/leetcode.png', 'LeetCode Profile')" style="cursor: pointer;" title="View LeetCode Profile Image">
+                        <div class="profile-brand mb-3">
+                            <i class="fas fa-code fa-2x text-accent"></i>
+                        </div>
+                        <h4>LeetCode</h4>
+                        <p>Problem Solving & DSA</p>
+                        <span class="profile-link mt-3">View Profile Picture <i class="fas fa-image"></i></span>
+                    </div>
+                    
+                    <div class="achievement-card profile-card" onclick="openModal('assets/skillrack.png', 'SkillRack Profile')" style="cursor: pointer;" title="View SkillRack Profile Image">
+                        <div class="profile-brand mb-3">
+                            <i class="fas fa-laptop-code fa-2x text-accent"></i>
+                        </div>
+                        <h4>SkillRack</h4>
+                        <p>Competitive Programming</p>
+                        <span class="profile-link mt-3">View Profile Picture <i class="fas fa-image"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured <span class="text-accent">Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-container">
+                        <img src="image.png" alt="AI Powered Pneumonia Detection" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Powered Pneumonia Detection</h3>
+                        <p class="project-desc">
+                            Developed a CNN-based Deep Learning model using TensorFlow and Python for automated pneumonia detection on 5000+ chest X-ray images. Applied image preprocessing and data augmentation techniques. Achieved 95% validation accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>Python</span>
+                            <span>CNN</span>
+                            <span>OpenCV</span>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Ganeshjeyakumark/pneumonia_detection" class="btn btn-secondary btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <button onclick="openProjectModal('pneumonia')" class="btn btn-primary btn-sm"><i class="fas fa-file-alt"></i> View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img-container">
+                        <img src="assets/three_hearts banner.png" alt="Three Hearts Handmades" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Three Hearts Handmades</h3>
+                        <p class="project-desc">
+                            Developed a responsive business website showcasing 20+ handmade products. Designed modern product catalog pages with responsive layouts. Improved brand visibility through digital product presentation.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>UI Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Ganeshjeyakumark/three-hearts-handmades" class="btn btn-secondary btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://three-hearts-handmades.vercel.app/" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img-container">
+                        <img src="assets/skillswap.jpg" alt="Skill Swap Platform" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Skill Swap Platform</h3>
+                        <p class="project-desc">
+                            Built a responsive skill-sharing platform. Implemented interactive profile management modules. Designed scalable architecture for future backend integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive UI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Ganeshjeyakumark/skillswapp" class="btn btn-secondary btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/Ganeshjeyakumark/skillswapp" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My <span class="text-accent">Certifications</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-img-container" onclick="openModal('assets/java.jpg', 'Infosys Springboard – Java Programming')">
+                        <img src="assets/java.jpg" alt="Java Programming Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Java Programming</h3>
+                        <h4 class="cert-issuer">Infosys Springboard</h4>
+                        <p class="cert-desc">
+                            Completed Java programming fundamentals including OOP concepts and problem solving.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-img-container" onclick="openModal('assets/python.jpg', 'Cognitive.ai – Python Programming')">
+                        <img src="assets/python.jpg" alt="Python Programming Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Programming</h3>
+                        <h4 class="cert-issuer">Cognitive.ai</h4>
+                        <p class="cert-desc">
+                            Learned Python basics and applied them in data processing and simple machine learning tasks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-img-container" onclick="openModal('assets/mongo db.jpeg', 'MongoDB CRUD Operations Certification')">
+                        <img src="assets/mongo db.jpeg" alt="MongoDB CRUD Operations Certificate" class="cert-img">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">MongoDB CRUD Operations</h3>
+                        <h4 class="cert-issuer">MongoDB</h4>
+                        <p class="cert-desc">
+                            Practical experience performing database CRUD operations using MongoDB.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Journey & <span class="text-accent">Milestones</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Education -->
+                <div class="timeline-column" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>B.Tech Information Technology</h4>
+                            <h5>Francis Xavier Engineering College</h5>
+                            <span class="timeline-date">2023 &mdash; 2027</span>
+                            <p><strong>CGPA:</strong> 8.26</p>
+                            <p>Focusing on software engineering, back-end development, and AI methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internships -->
+                <div class="timeline-column" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="timeline-title"><i class="fas fa-briefcase"></i> Internships</h3>
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Data Science Intern</h4>
+                            <h5>E-Dot</h5>
+                            <span class="timeline-date">Dec 2025 &mdash; Jan 2026</span>
+                            <p>• Built Machine Learning models using Python.</p>
+                            <p>• Improved prediction accuracy by 20%.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Web Development Intern</h4>
+                            <h5>E-Dot</h5>
+                            <span class="timeline-date">May 2024 &mdash; Jun 2024</span>
+                            <p>• Enhanced responsive dashboards improving UI responsiveness by 30%.</p>
+                            <p>• Optimized layouts reducing page load time by 20%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Key <span class="text-accent">Achievements</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="achievements-grid-premium">
+                <div class="achievement-card-premium" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-trophy text-accent fa-2x"></i>
+                    </div>
+                    <div class="achievement-num-box">
+                        <span class="counter-val" data-target="1">0</span>
+                    </div>
+                    <h4>Smart India Hackathon (SIH)</h4>
+                    <p>Participated in SIH National Level Hackathon</p>
+                </div>
+                <div class="achievement-card-premium" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-rocket text-accent fa-2x"></i>
+                    </div>
+                    <div class="achievement-num-box">
+                        <span class="counter-val" data-target="1">0</span>
+                    </div>
+                    <h4>Founded Startup</h4>
+                    <p>Founded Three Hearts Handmades</p>
+                </div>
+                <div class="achievement-card-premium" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-indian-rupee-sign text-accent fa-2x"></i>
+                    </div>
+                    <div class="achievement-num-box">
+                        <span class="text-accent">₹</span><span class="counter-val" data-target="1000">0</span><span class="text-accent">+</span>
+                    </div>
+                    <h4>Revenue Generated</h4>
+                    <p>Generated ₹1,000+ revenue within <span class="counter-val" data-target="20">0</span> days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In <span class="text-accent">Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently looking for new opportunities, and my inbox is always open. Whether you have a
+                        question or just want to say hi, I'll try my best to get back to you!</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:ganeshjeyakumark@gmail.com">ganeshjeyakumark@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+917010085235">+91 7010085235</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Tirunelveli, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-icons-contact mt-5">
+                        <a href="https://github.com/Ganeshjeyakumark" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ganeshjeyakumar" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group-premium">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group-premium">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group-premium">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group-premium">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">&lt;</span>Ganesh<span class="logo-accent">/&gt;</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ganeshjeyakumar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ganeshjeyakumark@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Ganesh Jeya Kumar. All rights reserved.</p>
+            <p class="footer-tagline">Designed & Built with <i class="fas fa-heart text-accent"></i> & <i
+                    class="fas fa-coffee text-accent"></i></p>
+        </div>
+        <div class="scroll-top">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal project-modal-wrapper">
+        <div class="project-modal-content">
+            <span class="close-modal close-project-modal" onclick="closeProjectModal()">&times;</span>
+            <h2 id="projectModalTitle" class="project-modal-title">Project Title</h2>
+            <div class="project-modal-layout">
+                <div class="project-modal-images-container" id="projectModalImages">
+                    <!-- Images will be injected here -->
+                </div>
+                <div class="project-modal-info">
+                    <p id="projectModalDesc" class="project-modal-desc"></p>
+                    <div class="project-modal-actions mt-4">
+                        <a href="#" id="projectModalGithub" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub Repo</a>
+                        <a href="#" id="projectModalDemo" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- AOS Animaion JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
